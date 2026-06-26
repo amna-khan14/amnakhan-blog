@@ -1322,6 +1322,14 @@ a {
   box-shadow: 0 8px 24px var(--blog-shadow-accent);
 }
 
+.avatar--photo {
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  padding: 0;
+  background: var(--secondary-soft);
+}
+
 .sidebar-name {
   display: block;
   font-family: var(--font-display);
@@ -1727,7 +1735,7 @@ a {
 body.page-home .content-main--center {
   position: relative;
   max-width: 620px;
-  padding: clamp(3rem, 10vh, 5rem) clamp(1.25rem, 3vw, 2rem) 3rem;
+  padding: clamp(2rem, 6vh, 3.25rem) clamp(1.25rem, 3vw, 2rem) 2.5rem;
   text-align: center;
 }
 
@@ -1738,11 +1746,11 @@ body.page-home .content-main--center::before {
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
-  height: min(420px, 52vh);
+  height: min(300px, 38vh);
   background: linear-gradient(
     180deg,
     var(--color-dark) 0%,
-    var(--color-dark-soft) 55%,
+    var(--color-dark-soft) 50%,
     transparent 100%
   );
   z-index: 0;
@@ -1760,7 +1768,7 @@ body.page-home .welcome-home {
 
 body.page-home .welcome-hero {
   margin-bottom: 0;
-  padding-bottom: 2.75rem;
+  padding-bottom: 1.75rem;
 }
 
 body.page-home .welcome-eyebrow {
@@ -1825,10 +1833,65 @@ body.page-home .welcome-links-dot {
 }
 
 body.page-home .welcome-about,
+body.page-home .welcome-recent,
 body.page-home .welcome-contact {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   margin-top: 0;
   border-top: 1px solid var(--blog-border);
+}
+
+body.page-home .welcome-recent {
+  text-align: center;
+}
+
+.home-recent-list {
+  list-style: none;
+  margin: 0 auto 0.75rem;
+  padding: 0;
+  max-width: 520px;
+  text-align: left;
+}
+
+.home-recent-item + .home-recent-item {
+  margin-top: 0.55rem;
+}
+
+.home-recent-item a {
+  display: block;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.home-recent-item a:hover {
+  background: var(--accent-soft);
+  color: var(--color-primary-dark);
+}
+
+.home-recent-item time {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 0.15rem;
+}
+
+.home-recent-more {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.home-recent-more a {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.home-recent-more a:hover {
+  color: var(--color-primary-dark);
 }
 
 body.page-home .welcome-about-title {
@@ -1861,10 +1924,12 @@ body.page-home .about-list--emoji strong {
 body.page-home .welcome-closing {
   font-size: 0.86rem;
   font-style: italic;
+  margin-bottom: 0;
 }
 
 body.page-home .welcome-contact {
-  margin-top: 2rem;
+  padding-top: 1.25rem;
+  padding-bottom: 0.25rem;
 }
 
 body.page-home .welcome-contact a {
@@ -2394,11 +2459,11 @@ body.page-home .welcome-contact a:hover {
 }
 
 .article-page {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
-  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
 }
 
 .article-page .article-header,
@@ -2411,12 +2476,12 @@ body.page-home .welcome-contact a:hover {
 }
 
 .article-page .article-header {
-  padding: 1.25rem 1.5rem 1.5rem;
+  padding: 1.25rem 0 1rem;
   margin-bottom: 0;
 }
 
 .article-page .article-content {
-  padding: 1.5rem 1.75rem;
+  padding: 1.25rem 0 2rem;
   border-top: 1px solid var(--line);
 }
 
@@ -2425,8 +2490,30 @@ body.page-home .welcome-contact a:hover {
 }
 
 .article-page .related-posts {
-  margin-top: 1rem;
-  padding: 1.15rem 1.25rem;
+  margin-top: 0;
+  padding: 1.25rem 0 0;
+  border-top: 1px solid var(--line);
+}
+
+/* Post pages — full width, no card, 10px side inset */
+body[data-page="post"] .content-main {
+  max-width: none;
+  margin: 0;
+  width: 100%;
+  padding: 1.5rem 30px 2.5rem;
+}
+
+body[data-page="post"] .top-breadcrumb {
+  margin-bottom: 0.85rem;
+}
+
+body[data-page="post"] .post-hero {
+  border-radius: var(--radius);
+  height: 120px;
+}
+
+body[data-page="post"] .article-header h1 {
+  font-size: clamp(1.55rem, 2.5vw, 2rem);
 }
 
 .site-footer {
@@ -2625,7 +2712,7 @@ body[data-page="archives"] .panel-block:first-of-type {
 
 @media (max-width: 860px) {
   body.page-home .content-main--center::before {
-    height: min(460px, 48vh);
+    height: min(280px, 36vh);
   }
 
   .sidebar-backdrop:not([hidden]) {
@@ -2650,6 +2737,10 @@ body[data-page="archives"] .panel-block:first-of-type {
 
   .site-main {
     margin-left: 0;
+  }
+
+  body[data-page="post"] .content-main {
+    padding: 4.5rem 30px 2rem;
   }
 
   .content-main {

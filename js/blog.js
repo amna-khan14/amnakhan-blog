@@ -119,6 +119,23 @@
       .join("");
   }
 
+  function renderHomeRecentPosts(container, limit = 4) {
+    if (!container) return;
+
+    container.innerHTML = sortPosts(blogData.posts)
+      .slice(0, limit)
+      .map(
+        (post) => `
+        <li class="home-recent-item">
+          <a href="${postUrl(post)}">
+            <time datetime="${post.published}">${formatDate(post.published)}</time>
+            ${post.title}
+          </a>
+        </li>`
+      )
+      .join("");
+  }
+
   /** Categories: parent folder → click sub-folder → category.html */
   function renderCategoriesPage(container) {
     if (!container) return;
@@ -412,6 +429,7 @@
     qsa("[data-blog-loading]").forEach((el) => el.remove());
 
     qsa("[data-recent-posts]").forEach((el) => renderRecentPosts(el, 5));
+    qsa("[data-home-recent-posts]").forEach((el) => renderHomeRecentPosts(el));
     qsa("[data-trending-tags]").forEach((el) => renderTrendingTags(el));
 
     const categoriesContainer = qs("[data-categories-list]");

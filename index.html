@@ -14,7 +14,9 @@
 
   <aside class="sidebar" id="siteSidebar" aria-label="Site navigation">
     <div class="sidebar-profile">
-      <div class="avatar" aria-hidden="true">AK</div>
+      <div class="avatar avatar--photo-wrap">
+        <img class="avatar avatar--photo" src="assets/amna-profile.png" alt="Amna Khan profile photo" width="88" height="88" loading="eager" />
+      </div>
       <a href="index.html" class="sidebar-name">Amna Khan</a>
       <p class="sidebar-role">Computer Engineering Student</p>
       <p class="sidebar-campus">UET Lahore, Faisalabad Campus</p>
@@ -37,7 +39,7 @@
       <main class="content-main content-main--center" id="mainContent">
         <article class="welcome-home">
           <header class="welcome-hero">
-            <p class="welcome-eyebrow">Welcome</p>
+            <!-- <p class="welcome-eyebrow">Welcome</p> -->
             <h1 class="welcome-title"><span class="welcome-wave" aria-hidden="true">👋</span> Welcome to Amna Khan's Blog</h1>
             <p class="welcome-tagline">Exploring Computer Engineering, programming, databases, and personal growth</p>
             <span class="welcome-divider" aria-hidden="true"></span>
@@ -59,6 +61,14 @@
               <li><span class="about-emoji" aria-hidden="true">🚀</span><span>Always curious and ready to learn new <strong>programming concepts</strong></span></li>
             </ul>
             <p class="welcome-closing">This is my personal space to document growth, learning, and experiences.</p>
+          </section>
+
+          <section class="welcome-recent" aria-labelledby="homeRecentTitle">
+            <h2 class="welcome-about-title" id="homeRecentTitle"><span aria-hidden="true">📰</span> Recent Posts</h2>
+            <ul class="home-recent-list" data-home-recent-posts aria-live="polite">
+              <li class="home-recent-item" data-blog-loading>Loading…</li>
+            </ul>
+            <p class="home-recent-more"><a href="archives.html">View all posts →</a></p>
           </section>
 
           <section class="welcome-contact" id="contact">

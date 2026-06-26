@@ -9,6 +9,13 @@ export const NAV_ITEMS = [
   { id: "about", label: "About", href: "index.html#about", icon: "user" },
 ];
 
+export const PROFILE_IMAGE = "assets/amna-profile.png";
+
+export function renderAvatar(root) {
+  const src = `${root}${PROFILE_IMAGE.replace(/^\//, "")}`;
+  return `<img class="avatar avatar--photo" src="${src}" alt="Amna Khan profile photo" width="88" height="88" loading="eager" />`;
+}
+
 export function escapeHtml(text) {
   return text
     .replace(/&/g, "&amp;")
@@ -60,7 +67,7 @@ export function renderBodyOpen({ root, activeNav = "", pageId = "" }) {
 
   <aside class="sidebar" id="siteSidebar" aria-label="Site navigation">
     <div class="sidebar-profile">
-      <div class="avatar" aria-hidden="true">AK</div>
+      ${renderAvatar(root)}
       <a href="${root}index.html" class="sidebar-name">Amna Khan</a>
       <p class="sidebar-role">Computer Engineering Student</p>
       <p class="sidebar-campus">UET Lahore, Faisalabad Campus</p>
