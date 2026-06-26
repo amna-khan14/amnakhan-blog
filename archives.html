@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archives | Amna Khan Blog</title>
+  <meta name="description" content="Timeline of all blog posts." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-root="" data-page="archives">
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+  <button class="sidebar-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteSidebar">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="sidebar-backdrop" id="sidebarBackdrop" hidden aria-hidden="true"></div>
+
+  <aside class="sidebar" id="siteSidebar" aria-label="Site navigation">
+    <div class="sidebar-profile">
+      <div class="avatar" aria-hidden="true">AK</div>
+      <a href="index.html" class="sidebar-name">Amna Khan</a>
+      <p class="sidebar-role">Computer Engineering Student</p>
+      <p class="sidebar-campus">UET Lahore, Faisalabad Campus</p>
+    </div>
+    <nav class="sidebar-nav" id="mainNav" aria-label="Primary">
+      <a href="index.html" class="sidebar-link">
+        <span class="sidebar-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-9.5Z" fill="currentColor"/></svg></span>
+        <span>Home</span>
+      </a>
+        <a href="categories.html" class="sidebar-link">
+        <span class="sidebar-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7Z" fill="currentColor"/></svg></span>
+        <span>Categories</span>
+      </a>
+        <a href="tags.html" class="sidebar-link">
+        <span class="sidebar-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12.5 11.2 4.3a1 1 0 0 1 1.4 0l6.9 6.9a1 1 0 0 1 0 1.4L11.2 20.7a1 1 0 0 1-1.4 0L3 13.9a1.5 1.5 0 0 1 0-1.4Z" fill="currentColor"/></svg></span>
+        <span>Tags</span>
+      </a>
+        <a href="archives.html" class="sidebar-link is-active">
+        <span class="sidebar-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v3H4V5Zm0 5h16l-1 9H5l-1-9Zm4 3v2h8v-2H8Z" fill="currentColor"/></svg></span>
+        <span>Archives</span>
+      </a>
+        <a href="index.html#about" class="sidebar-link">
+        <span class="sidebar-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm-7 8a7 7 0 0 1 14 0H5Z" fill="currentColor"/></svg></span>
+        <span>About</span>
+      </a>
+    </nav>
+    <div class="sidebar-social">
+      <a href="https://github.com/amna-khan14" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69a3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.37.94.58 1.94.58 2.96 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.59.69.48A10 10 0 0 0 12 2Z" fill="currentColor"/></svg>
+      </a>
+      <a href="mailto:amnakhan.dev123@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Zm0 2 8 5 8-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <div class="site-main">
+    <div class="content-area">
+      <main class="content-main" id="mainContent">
+        <header class="page-header">
+        <nav class="top-breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Archives</span></nav>
+        <div class="page-title-block">
+          <h1>Archives</h1>
+          <p>Full timeline of all blog posts</p>
+        </div>
+      </header>
+        
+        <div class="filter-banner" data-filter-banner hidden></div>
+        <div class="archives-toolbar-wrap">
+          <label class="search-field" for="blogSearch">
+            <span class="search-label">Filter timeline</span>
+            <input id="blogSearch" type="search" data-blog-search placeholder="Type to filter posts…" autocomplete="off" />
+          </label>
+          <p class="search-status" data-search-status aria-live="polite"></p>
+        </div>
+        <div class="archives-timeline-wrap" data-archives-timeline aria-live="polite"><p data-blog-loading>Loading timeline…</p></div>
+      </main>
+
+      <aside class="panel-right" aria-label="Blog sidebar">
+        <form class="panel-search" action="archives.html" method="get" role="search">
+          <label class="visually-hidden" for="panelSearch">Search posts</label>
+          <span class="panel-search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <input id="panelSearch" type="search" name="q" placeholder="Search posts…" autocomplete="off" />
+        </form>
+        <section class="panel-block panel-block--lined">
+          <h2 class="panel-title">Recently Updated</h2>
+          <ul class="recent-list recent-list--panel" data-recent-posts aria-live="polite">
+            <li class="recent-item" data-blog-loading>Loading…</li>
+          </ul>
+        </section>
+        <section class="panel-block panel-block--lined">
+          <h2 class="panel-title">Trending Tags</h2>
+          <div class="tag-cloud tag-cloud--panel" data-trending-tags aria-live="polite">
+            <span data-blog-loading>Loading…</span>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© 2026 Amna Khan. University lab blog project.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

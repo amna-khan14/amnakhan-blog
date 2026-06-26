@@ -1,0 +1,244 @@
+{
+  "site": {
+    "title": "Amna Khan Blog",
+    "author": "Amna Khan",
+    "description": "Documenting my Computer Engineering journey at UET Lahore, Faisalabad Campus."
+  },
+  "parentFolders": [
+    {
+      "id": "portfolio",
+      "name": "portfolio-journey",
+      "label": "Portfolio & Journey",
+      "slug": "portfolio-journey"
+    },
+    {
+      "id": "semester-1",
+      "name": "1st-semester",
+      "label": "1st Semester",
+      "slug": "1st-semester"
+    },
+    {
+      "id": "semester-2",
+      "name": "2nd-semester",
+      "label": "2nd Semester",
+      "slug": "2nd-semester"
+    }
+  ],
+  "categories": [
+    {
+      "id": "foundations",
+      "parentId": "portfolio",
+      "shortName": "University-Life",
+      "name": "Foundations of My Journey",
+      "slug": "foundations-of-my-journey",
+      "folder": "foundations-of-my-journey",
+      "folderLabel": "Folder 1",
+      "theme": "journey",
+      "description": "Reflections on choosing engineering, university life, and building study habits."
+    },
+    {
+      "id": "programming",
+      "parentId": "semester-1",
+      "shortName": "Python",
+      "name": "Programming Fundamentals",
+      "slug": "programming-fundamentals",
+      "folder": "programming-fundamentals",
+      "folderLabel": "Folder 2",
+      "theme": "python",
+      "description": "Learning Python from first print statements to mini projects."
+    },
+    {
+      "id": "database",
+      "parentId": "semester-2",
+      "shortName": "Database",
+      "name": "Database Systems",
+      "slug": "database-systems",
+      "folder": "database-systems",
+      "folderLabel": "Folder 3",
+      "theme": "database",
+      "description": "ER modeling, normalization, SQL practice, and database projects."
+    }
+  ],
+  "tags": [
+    "Dr-Bilal-Ahmad",
+    "Learning",
+    "Programming",
+    "Python",
+    "Computer-Engineering",
+    "Student-Life",
+    "Database",
+    "MySQL",
+    "SQL",
+    "University-Life"
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "slug": "building-my-digital-footprint",
+      "file": "01-building-my-digital-footprint.html",
+      "title": "Building My Digital Footprint: Why I Started This GitHub Portfolio",
+      "category": "foundations",
+      "published": "2026-06-01",
+      "readTime": 5,
+      "tags": ["Learning", "Computer-Engineering", "Student-Life"],
+      "excerpt": "Why I created a GitHub portfolio to document my Computer Engineering learning journey beyond grades and assignments.",
+      "related": [2, 5]
+    },
+    {
+      "id": 2,
+      "slug": "choosing-computer-engineering",
+      "file": "02-choosing-computer-engineering.html",
+      "title": "Choosing Computer Engineering: The Beginning of My Academic Journey",
+      "category": "foundations",
+      "published": "2026-06-02",
+      "readTime": 4,
+      "tags": ["Computer-Engineering", "University-Life", "Learning"],
+      "excerpt": "How curiosity about technology led me to Computer Engineering at UET Lahore, Faisalabad Campus.",
+      "related": [1, 3]
+    },
+    {
+      "id": 3,
+      "slug": "my-first-weeks-at-uet",
+      "file": "03-my-first-weeks-at-uet.html",
+      "title": "My First Weeks at UET: Learning Beyond the Classroom",
+      "category": "foundations",
+      "published": "2026-06-03",
+      "readTime": 4,
+      "tags": ["University-Life", "Student-Life", "Learning"],
+      "excerpt": "What my first weeks at university taught me about independent learning and practical study.",
+      "related": [2, 4]
+    },
+    {
+      "id": 4,
+      "slug": "developing-better-study-habits",
+      "file": "04-developing-better-study-habits.html",
+      "title": "Developing Better Study Habits During My First Semester",
+      "category": "foundations",
+      "published": "2026-06-04",
+      "readTime": 4,
+      "tags": ["Student-Life", "Learning", "Dr-Bilal-Ahmad"],
+      "excerpt": "How daily routines, practice, and asking questions helped me manage my first semester effectively.",
+      "related": [3, 5]
+    },
+    {
+      "id": 5,
+      "slug": "first-experience-with-python",
+      "file": "05-first-experience-with-python.html",
+      "title": "Programming Fundamentals: My First Experience with Python",
+      "category": "programming",
+      "published": "2026-06-05",
+      "readTime": 4,
+      "tags": ["Programming", "Python", "Dr-Bilal-Ahmad"],
+      "excerpt": "From my first print() statement to understanding variables and logical problem solving in Python.",
+      "related": [6, 1]
+    },
+    {
+      "id": 6,
+      "slug": "variables-data-types-user-input",
+      "file": "06-variables-data-types-user-input.html",
+      "title": "Understanding Variables, Data Types and User Input",
+      "category": "programming",
+      "published": "2026-06-06",
+      "readTime": 4,
+      "tags": ["Programming", "Python", "Learning"],
+      "excerpt": "How variables, data types, input(), and type conversion strengthened my Python foundation.",
+      "related": [5, 7]
+    },
+    {
+      "id": 7,
+      "slug": "decision-making-loops-functions",
+      "file": "07-decision-making-loops-functions.html",
+      "title": "Decision Making, Loops and Functions",
+      "category": "programming",
+      "published": "2026-06-07",
+      "readTime": 5,
+      "tags": ["Programming", "Python", "Dr-Bilal-Ahmad"],
+      "excerpt": "Learning if/elif/else, loops, and functions to write efficient and organized Python programs.",
+      "related": [6, 8]
+    },
+    {
+      "id": 8,
+      "slug": "lists-dictionaries-problem-solving",
+      "file": "08-lists-dictionaries-problem-solving.html",
+      "title": "Lists, Dictionaries and Problem Solving",
+      "category": "programming",
+      "published": "2026-06-08",
+      "readTime": 5,
+      "tags": ["Programming", "Python", "Learning"],
+      "excerpt": "Using lists, tuples, dictionaries, and debugging techniques to solve practical Python problems.",
+      "related": [7, 9]
+    },
+    {
+      "id": 9,
+      "slug": "python-mini-projects",
+      "file": "09-python-mini-projects.html",
+      "title": "Python Mini Projects",
+      "category": "programming",
+      "published": "2026-06-09",
+      "readTime": 5,
+      "tags": ["Programming", "Python", "Student-Life"],
+      "excerpt": "Applying Python concepts through calculator, quiz, grade, and guessing game mini projects.",
+      "related": [8, 10]
+    },
+    {
+      "id": 10,
+      "slug": "first-impression-database-systems",
+      "file": "10-first-impression-database-systems.html",
+      "title": "My First Impression of Database Systems",
+      "category": "database",
+      "published": "2026-06-10",
+      "readTime": 4,
+      "tags": ["Database", "Learning", "Computer-Engineering"],
+      "excerpt": "Discovering why databases are the backbone of modern applications and how DBMS organizes data.",
+      "related": [11, 9]
+    },
+    {
+      "id": 11,
+      "slug": "er-modeling-database-design",
+      "file": "11-er-modeling-database-design.html",
+      "title": "Learning Database Design Through ER Modeling",
+      "category": "database",
+      "published": "2026-06-11",
+      "readTime": 5,
+      "tags": ["Database", "Learning", "Dr-Bilal-Ahmad"],
+      "excerpt": "Planning databases with Entity Relationship diagrams before writing a single SQL command.",
+      "related": [10, 12]
+    },
+    {
+      "id": 12,
+      "slug": "normalization-database-design",
+      "file": "12-normalization-database-design.html",
+      "title": "Understanding Normalization and Database Design",
+      "category": "database",
+      "published": "2026-06-12",
+      "readTime": 5,
+      "tags": ["Database", "SQL", "Learning"],
+      "excerpt": "How 1NF, 2NF, and 3NF reduce redundancy and improve database consistency.",
+      "related": [11, 13]
+    },
+    {
+      "id": 13,
+      "slug": "learning-sql-through-practice",
+      "file": "13-learning-sql-through-practice.html",
+      "title": "Learning SQL Through Practice",
+      "category": "database",
+      "published": "2026-06-13",
+      "readTime": 5,
+      "tags": ["SQL", "Database", "MySQL", "Dr-Bilal-Ahmad"],
+      "excerpt": "Practicing CREATE, INSERT, UPDATE, DELETE, SELECT, WHERE, and JOIN in lab sessions.",
+      "related": [12, 14]
+    },
+    {
+      "id": 14,
+      "slug": "database-mini-project",
+      "file": "14-database-mini-project.html",
+      "title": "Database Mini Project: Applying My Knowledge",
+      "category": "database",
+      "published": "2026-06-14",
+      "readTime": 6,
+      "tags": ["Database", "SQL", "Student-Life"],
+      "excerpt": "Applying ER design, normalization, and SQL queries in a complete semester-end database project.",
+      "related": [13, 11]
+    }
+  ]
+}
