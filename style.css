@@ -1928,12 +1928,30 @@ body.page-home .welcome-closing {
 }
 
 body.page-home .welcome-contact {
-  padding-top: 1.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: 1rem;
+  padding-bottom: 0.15rem;
+}
+
+body.page-home .welcome-contact .welcome-about-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+body.page-home .welcome-contact p {
+  margin: 0.15rem 0;
+  font-size: 0.76rem;
+  color: var(--muted);
+  line-height: 1.5;
 }
 
 body.page-home .welcome-contact a {
   color: var(--color-primary);
+  font-size: 0.76rem;
+  font-weight: 500;
 }
 
 body.page-home .welcome-contact a:hover {
