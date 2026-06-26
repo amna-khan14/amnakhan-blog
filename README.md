@@ -11,7 +11,6 @@ Built with **HTML**, **CSS**, and **JavaScript**. Layout inspired by a class ref
 | **Reference URL** | [https://zainab937-gif.github.io/Zainab-aamir1/](https://zainab937-gif.github.io/Zainab-aamir1/) |
 | **Reference author** | Zainab Aamir |
 | **Reference stack** | Jekyll + Chirpy theme (GitHub Pages) |
-| **Reference layout** | Left sidebar navigation, main content, right panel (search, recent posts, tags) |
 | **Our implementation** | Pure HTML/CSS/JS — same UX structure, different theme and codebase |
 
 This project follows the reference **structure** (categories, tags, archives, folder organization) but does **not** copy its design or Jekyll setup.
@@ -23,7 +22,7 @@ This project follows the reference **structure** (categories, tags, archives, fo
 ### Step 1 — Create a GitHub repository
 
 1. Go to [github.com/new](https://github.com/new)
-2. Name the repo (example: `amnakhan-blogpost`)
+2. Name the repo (example: `amnakhan-blog`)
 3. Set visibility to **Public** (required for free GitHub Pages)
 4. Do **not** add README if uploading existing files
 5. Click **Create repository**
@@ -37,20 +36,11 @@ git init
 git add .
 git commit -m "Add Amna Khan university blog"
 git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/amnakhan-blogpost.git
+git remote add origin https://github.com/YOUR-USERNAME/amnakhan-blog.git
 git push -u origin main
 ```
 
 Replace `YOUR-USERNAME` with your GitHub username.
-
-### Step 3 — Enable GitHub Pages
-
-1. Open your repo on GitHub
-2. Go to **Settings** → **Pages**
-3. Under **Build and deployment**:
-   - **Source:** Deploy from a branch
-   - **Branch:** `main` → `/ (root)` → **Save**
-4. Wait 1–3 minutes for deployment
 
 ### Step 4 — Open your live site
 
